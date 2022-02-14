@@ -1,0 +1,11 @@
+version: '3.3'
+   #docker-compose up --build
+services:
+  web:
+    build: . 
+    volumes:
+      - .:/code
+    ports:
+    - 81:5000
+    restart: always
+ 
